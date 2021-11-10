@@ -91,3 +91,11 @@ O cliente não tem direitos de acesso ao conteúdo portanto o servidor está rej
 **404 Not Found**
 
 O servidor não pode encontrar o recurso solicitado. Este código de resposta talvez seja o mais famoso devido à frequência com que acontece na web.
+
+**REFERÊNCIAS BIBLIOGRÁFICAS**
+
+https://celke.com.br/new/material-gratuito/validar-form-nodejs-yup
+
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
+
+
