@@ -55,3 +55,39 @@ Para ter certeza que foi utilizado com sucesso usaremos o try/catch, que serve p
 Para testar é só utilizar o insomnia e colocar a rota:  http://localhost:8080/user
 
 ![Imgur](https://imgur.com/P373x1v.png)
+
+Caso seja o projeto apresentado algum erro durante o processamento do script, é dever do desenvolvedor configurar a aplicação de acordo com as normas HTTP, onde as mesmas funcionam como maneira padrão de comunicação de erros ao usuário. Os principais códigos de status usados, e mais comumente aparentes nos sistemas são referentes aos mais diversos problemas. os status de problemas HTTP são organizados em quatro classes, sendo elas 
+
+1. Respostas de informação (100-199),
+2. Respostas de sucesso (200-299),
+3. Redirecionamentos (300-399)
+4. Erros do cliente (400-499)
+5. Erros do servidor (500-599).
+
+**100 Continue**
+
+Essa resposta provisória indica que tudo ocorreu bem até agora e que o cliente deve continuar com a requisição ou ignorar se já concluiu o que gostaria.
+
+**101 Switching Protocol**
+
+Esse código é enviado em resposta a um cabeçalho de solicitação Upgrade (en-US) pelo cliente, e indica o protocolo a que o servidor está alternando.
+
+**205 Reset Content**
+
+Esta requisição é enviada após realizanda a solicitação para informar ao user agent redefinir a visualização do documento que enviou essa solicitação.
+
+**206 Partial Content**
+
+Esta resposta é usada por causa do cabeçalho de intervalo enviado pelo cliente para separar o download em vários fluxos.
+
+**402 Payment Required **
+
+Este código de resposta está reservado para uso futuro. O objetivo inicial da criação deste código era usá-lo para sistemas digitais de pagamento porém ele não está sendo usado atualmente.
+
+**403 Forbidden**
+
+O cliente não tem direitos de acesso ao conteúdo portanto o servidor está rejeitando dar a resposta. Diferente do código 401, aqui a identidade do cliente é conhecida.
+
+**404 Not Found**
+
+O servidor não pode encontrar o recurso solicitado. Este código de resposta talvez seja o mais famoso devido à frequência com que acontece na web.
